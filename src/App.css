@@ -1,38 +1,100 @@
+/* Main App Styles */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #8993f0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: #019fca;
+}
+
+/* Slider Container Styles */
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between the buttons */
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.chart-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  width: 600vw; /* 100vw * number of charts */
+}
+
+.chart-container-outer {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider-button {
+  background-color: #8993f0;
   color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
-.App-link {
-  color: #61dafb;
+.left-button {
+  left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-button {
+  right: 10px;
+}
+
+/* Additional Styles */
+.chart-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.chart-container canvas {
+  display: block;
+  width: 100%;
+}
+
+.interval-selector {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.interval-selector label {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.map-container {
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
