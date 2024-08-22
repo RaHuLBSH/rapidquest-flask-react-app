@@ -43,7 +43,7 @@ function SalesOverTime() {
     const [interval, setInterval] = useState('daily');
 
     const fetchSalesData = (interval) => {
-        fetch(`http://localhost:5000/sales_over_time?interval=${interval}`)
+        fetch(`https://my-flask-project-1.onrender.com/sales_over_time?interval=${interval}`)
             .then((response) => response.text())
             .then((text) => {
                 try {
@@ -129,7 +129,7 @@ function SalesGrowthRateOverTime() {
   const [interval, setInterval] = useState('daily');
 
   const fetchSalesData = (interval) => {
-      fetch(`http://localhost:5000/sales_over_time?interval=${interval}&growth=True`)
+      fetch(`https://my-flask-project-1.onrender.com/sales_over_time?interval=${interval}&growth=True`)
           .then(response => response.json())
           .then(data => {
               const dates = data.map(item => item.date);
@@ -217,7 +217,7 @@ function NewCustomersOverTime() {
   const [interval, setInterval] = useState('daily');
 
   const fetchSalesData = (interval) => {
-      fetch(`http://localhost:5000/new_customers?interval=${interval}`)
+      fetch(`https://my-flask-project-1.onrender.com/new_customers?interval=${interval}`)
           .then((response) => response.text())
           .then((text) => {
               try {
@@ -314,7 +314,7 @@ function RepeatCustomersOverTime() {
   const [interval, setInterval] = useState('daily');
 
   const fetchSalesData = (interval) => {
-      fetch(`http://localhost:5000/repeat_customers?interval=${interval}`)
+      fetch(`https://my-flask-project-1.onrender.com/repeat_customers?interval=${interval}`)
           .then((response) => response.text())
           .then((text) => {
               try {
@@ -399,7 +399,7 @@ function GeographicalDistribution() {
     const [locations, setLocations] = useState([]);
     
     useEffect(() => {
-      fetch('http://localhost:5000/customer_distribution')
+      fetch('https://my-flask-project-1.onrender.com/customer_distribution')
         .then(response => response.json())
         .then(data => {
           // Ensure data contains latitude and longitude
@@ -447,7 +447,7 @@ function CLVByCohorts() {
     const [chartData, setChartData] = useState({ labels: [], datasets: [] });
 
     useEffect(() => {
-        fetch('http://localhost:5000/clv_by_cohorts')
+        fetch('https://my-flask-project-1.onrender.com/clv_by_cohorts')
             .then(response => response.json())
             .then(data => {
                 const cohorts = data.map(item => item._id);
