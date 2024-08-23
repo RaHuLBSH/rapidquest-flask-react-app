@@ -14,6 +14,8 @@ import { Line, Bar } from 'react-chartjs-2';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './App.css';
+import L from 'leaflet';
+import locationPointer from './location_pointer.png';
 
 // Registering required scales and elements
 ChartJS.register(
@@ -27,6 +29,13 @@ ChartJS.register(
     Legend,
 );
 
+const customMarkerIcon = new L.Icon({
+    iconUrl: locationPointer,
+    iconSize: [32, 32], // Adjust this size based on your image dimensions
+    iconAnchor: [16, 32], // Adjust the anchor point to center the icon
+    popupAnchor: [0, -32], // Adjust where the popup opens relative to the icon
+  });
+  
 function SalesOverTime() {
     const [chartData, setChartData] = useState({
         labels: [],
@@ -427,14 +436,14 @@ function GeographicalDistribution() {
             />
             {locations.length > 0 ? (
               locations.map((location, index) => (
-                <Marker key={index} position={[location.latitude, location.longitude]}>
+                <Marker key={index} position={[location.latitude, location.longitude]} icon={customMarkerIcon}>
                   <Popup>
                     {location.city}: {location.count} customers
                   </Popup>
                 </Marker>
               ))
             ) : (
-              <div>No locations available</div>
+            <div className="no-locations">No locations available</div>
             )}
           </MapContainer>
         </div>

@@ -98,3 +98,26 @@
   overflow: hidden;
   position: relative;
 }
+
+/* Style the popup */
+.leaflet-popup-content-wrapper {
+  background-color: #fff; 
+  border-radius: 8px; 
+  padding: 10px; 
+}
+
+/* Style the popup content text */
+.leaflet-popup-content {
+  font-family: Arial, sans-serif; 
+  font-size: 14px; 
+  color: #333; 
+}
+
+/* Custom style for the "No locations available" message */
+.no-locations {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #ff0000; 
+  text-align: center; 
+  margin-top: 20px; 
+}
