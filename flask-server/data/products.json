@@ -1,0 +1,73 @@
+[
+    {
+      "product_id": 1,
+      "name": "Laptop",
+      "category": "Electronics",
+      "price": 1200.00,
+      "stock": 50
+    },
+    {
+      "product_id": 2,
+      "name": "Smartphone",
+      "category": "Electronics",
+      "price": 799.99,
+      "stock": 30
+    },
+    {
+      "product_id": 3,
+      "name": "Headphones",
+      "category": "Electronics",
+      "price": 199.99,
+      "stock": 100
+    },
+    {
+      "product_id": 4,
+      "name": "Coffee Maker",
+      "category": "Home Appliances",
+      "price": 89.99,
+      "stock": 20
+    },
+    {
+      "product_id": 5,
+      "name": "Toaster",
+      "category": "Home Appliances",
+      "price": 49.99,
+      "stock": 15
+    },
+    {
+      "product_id": 6,
+      "name": "Microwave Oven",
+      "category": "Home Appliances",
+      "price": 199.99,
+      "stock": 25
+    },
+    {
+      "product_id": 7,
+      "name": "Gaming Chair",
+      "category": "Furniture",
+      "price": 299.99,
+      "stock": 10
+    },
+    {
+      "product_id": 8,
+      "name": "Dining Table",
+      "category": "Furniture",
+      "price": 450.00,
+      "stock": 5
+    },
+    {
+      "product_id": 9,
+      "name": "T-shirt",
+      "category": "Clothing",
+      "price": 25.99,
+      "stock": 200
+    },
+    {
+      "product_id": 10,
+      "name": "Jeans",
+      "category": "Clothing",
+      "price": 40.99,
+      "stock": 150
+    }
+  ]
+  

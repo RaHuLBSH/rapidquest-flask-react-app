@@ -52,12 +52,12 @@ function SalesOverTime() {
     const [interval, setInterval] = useState('daily');
 
     const fetchSalesData = (interval) => {
-        fetch(`https://my-flask-project-1.onrender.com/sales_over_time?interval=${interval}`)
+        fetch(`http://127.0.0.1:8080/sales_over_time?interval=${interval}`)
             .then((response) => response.text())
             .then((text) => {
                 try {
                     const data = JSON.parse(text);
-                    const dates = data.map((item) => item._id);
+                    const dates = data.map((item) => item.date);
                     const sales = data.map((item) => item.totalSales);
           
                     setChartData({
@@ -138,7 +138,7 @@ function SalesGrowthRateOverTime() {
   const [interval, setInterval] = useState('daily');
 
   const fetchSalesData = (interval) => {
-      fetch(`https://my-flask-project-1.onrender.com/sales_over_time?interval=${interval}&growth=True`)
+      fetch(`http://127.0.0.1:8080/sales_over_time?interval=${interval}&growth=True`)
           .then(response => response.json())
           .then(data => {
               const dates = data.map(item => item.date);
@@ -226,12 +226,12 @@ function NewCustomersOverTime() {
   const [interval, setInterval] = useState('daily');
 
   const fetchSalesData = (interval) => {
-      fetch(`https://my-flask-project-1.onrender.com/new_customers?interval=${interval}`)
+      fetch(`http://127.0.0.1:8080/new_customers?interval=${interval}`)
           .then((response) => response.text())
           .then((text) => {
               try {
                   const data = JSON.parse(text);
-                  const dates = data.map((item) => item._id);
+                  const dates = data.map((item) => item.date);
                   const newCustomers = data.map((item) => item.newCustomers);
         
                   setChartData({
@@ -323,12 +323,12 @@ function RepeatCustomersOverTime() {
   const [interval, setInterval] = useState('daily');
 
   const fetchSalesData = (interval) => {
-      fetch(`https://my-flask-project-1.onrender.com/repeat_customers?interval=${interval}`)
+      fetch(`http://127.0.0.1:8080/repeat_customers?interval=${interval}`)
           .then((response) => response.text())
           .then((text) => {
               try {
                   const data = JSON.parse(text);
-                  const dates = data.map((item) => item._id);
+                  const dates = data.map((item) => item.date);
                   const repeatCustomers = data.map((item) => item.repeatCustomers);
         
                   setChartData({
@@ -408,7 +408,7 @@ function GeographicalDistribution() {
     const [locations, setLocations] = useState([]);
     
     useEffect(() => {
-      fetch('https://my-flask-project-1.onrender.com/customer_distribution')
+      fetch('http://127.0.0.1:8080/customer_distribution')
         .then(response => response.json())
         .then(data => {
           // Ensure data contains latitude and longitude
@@ -456,10 +456,10 @@ function CLVByCohorts() {
     const [chartData, setChartData] = useState({ labels: [], datasets: [] });
 
     useEffect(() => {
-        fetch('https://my-flask-project-1.onrender.com/clv_by_cohorts')
+        fetch('http://127.0.0.1:8080/clv_by_cohorts')
             .then(response => response.json())
             .then(data => {
-                const cohorts = data.map(item => item._id);
+                const cohorts = data.map(item => item.month);
                 const lifetimeValues = data.map(item => item.lifetimeValue);
                 
                 setChartData({

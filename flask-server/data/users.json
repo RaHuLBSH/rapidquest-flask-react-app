@@ -1,0 +1,93 @@
+[
+    {
+      "user_id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@example.com",
+      "created_at": "2023-01-15T12:34:56Z",
+      "city": "New York",
+      "total_spent": 1200.50
+    },
+    {
+      "user_id": 2,
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@example.com",
+      "created_at": "2023-02-20T09:12:43Z",
+      "city": "Los Angeles",
+      "total_spent": 950.75
+    },
+    {
+      "user_id": 3,
+      "first_name": "Sam",
+      "last_name": "Johnson",
+      "email": "sam.johnson@example.com",
+      "created_at": "2023-03-18T15:04:25Z",
+      "city": "Chicago",
+      "total_spent": 1350.60
+    },
+    {
+      "user_id": 4,
+      "first_name": "Emily",
+      "last_name": "Davis",
+      "email": "emily.davis@example.com",
+      "created_at": "2023-04-05T14:42:59Z",
+      "city": "Houston",
+      "total_spent": 750.45
+    },
+    {
+      "user_id": 5,
+      "first_name": "Michael",
+      "last_name": "Miller",
+      "email": "michael.miller@example.com",
+      "created_at": "2023-05-25T11:32:08Z",
+      "city": "Phoenix",
+      "total_spent": 1800.20
+    },
+    {
+      "user_id": 6,
+      "first_name": "Sarah",
+      "last_name": "Wilson",
+      "email": "sarah.wilson@example.com",
+      "created_at": "2023-06-11T13:26:19Z",
+      "city": "San Francisco",
+      "total_spent": 1300.35
+    },
+    {
+      "user_id": 7,
+      "first_name": "David",
+      "last_name": "Martinez",
+      "email": "david.martinez@example.com",
+      "created_at": "2023-07-03T16:55:04Z",
+      "city": "Dallas",
+      "total_spent": 1250.85
+    },
+    {
+      "user_id": 8,
+      "first_name": "Sophia",
+      "last_name": "Anderson",
+      "email": "sophia.anderson@example.com",
+      "created_at": "2023-08-14T10:03:19Z",
+      "city": "Seattle",
+      "total_spent": 1050.45
+    },
+    {
+      "user_id": 9,
+      "first_name": "James",
+      "last_name": "Taylor",
+      "email": "james.taylor@example.com",
+      "created_at": "2023-09-25T17:10:33Z",
+      "city": "San Diego",
+      "total_spent": 1600.00
+    },
+    {
+      "user_id": 10,
+      "first_name": "Olivia",
+      "last_name": "Thomas",
+      "email": "olivia.thomas@example.com",
+      "created_at": "2023-10-10T08:52:47Z",
+      "city": "Boston",
+      "total_spent": 2000.75
+    }
+  ]
+  

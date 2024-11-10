@@ -1,0 +1,123 @@
+[
+    {
+      "customer_id": 1,
+      "first_name": "Alice",
+      "last_name": "Williams",
+      "email": "alice.williams@example.com",
+      "city": "New York",
+      "country": "USA",
+      "total_spent": 2200.50,
+      "created_at": "2023-02-10T10:00:00Z",
+      "latitude": 40.7128,
+      "longitude": -74.0060
+    },
+    {
+      "customer_id": 2,
+      "first_name": "Bob",
+      "last_name": "Brown",
+      "email": "bob.brown@example.com",
+      "city": "Los Angeles",
+      "country": "USA",
+      "total_spent": 1800.75,
+      "created_at": "2023-03-05T12:30:00Z",
+      "latitude": 34.0522,
+      "longitude": -118.2437
+    },
+    {
+      "customer_id": 3,
+      "first_name": "Charlie",
+      "last_name": "Davis",
+      "email": "charlie.davis@example.com",
+      "city": "Chicago",
+      "country": "USA",
+      "total_spent": 3000.00,
+      "created_at": "2023-04-22T08:15:00Z",
+      "latitude": 41.8781,
+      "longitude": -87.6298
+    },
+    {
+      "customer_id": 4,
+      "first_name": "David",
+      "last_name": "Martinez",
+      "email": "david.martinez@example.com",
+      "city": "Dallas",
+      "country": "USA",
+      "total_spent": 1400.25,
+      "created_at": "2023-05-10T14:25:00Z",
+      "latitude": 32.7767,
+      "longitude": -96.7970
+    },
+    {
+      "customer_id": 5,
+      "first_name": "Eva",
+      "last_name": "Taylor",
+      "email": "eva.taylor@example.com",
+      "city": "San Francisco",
+      "country": "USA",
+      "total_spent": 2700.30,
+      "created_at": "2023-06-08T16:00:00Z",
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    {
+      "customer_id": 6,
+      "first_name": "Frank",
+      "last_name": "Wilson",
+      "email": "frank.wilson@example.com",
+      "city": "Miami",
+      "country": "USA",
+      "total_spent": 1500.50,
+      "created_at": "2023-07-02T11:40:00Z",
+      "latitude": 25.7617,
+      "longitude": -80.1918
+    },
+    {
+      "customer_id": 7,
+      "first_name": "Grace",
+      "last_name": "Moore",
+      "email": "grace.moore@example.com",
+      "city": "Houston",
+      "country": "USA",
+      "total_spent": 800.00,
+      "created_at": "2023-08-15T10:05:00Z",
+      "latitude": 29.7604,
+      "longitude": -95.3698
+    },
+    {
+      "customer_id": 8,
+      "first_name": "Hannah",
+      "last_name": "Lee",
+      "email": "hannah.lee@example.com",
+      "city": "Phoenix",
+      "country": "USA",
+      "total_spent": 2100.75,
+      "created_at": "2023-09-11T13:50:00Z",
+      "latitude": 33.4484,
+      "longitude": -112.0740
+    },
+    {
+      "customer_id": 9,
+      "first_name": "Isaac",
+      "last_name": "Harris",
+      "email": "isaac.harris@example.com",
+      "city": "Boston",
+      "country": "USA",
+      "total_spent": 1850.00,
+      "created_at": "2023-10-18T09:45:00Z",
+      "latitude": 42.3601,
+      "longitude": -71.0589
+    },
+    {
+      "customer_id": 10,
+      "first_name": "Jack",
+      "last_name": "Clark",
+      "email": "jack.clark@example.com",
+      "city": "Seattle",
+      "country": "USA",
+      "total_spent": 3200.00,
+      "created_at": "2023-11-02T17:15:00Z",
+      "latitude": 47.6062,
+      "longitude": -122.3321
+    }
+  ]
+  
